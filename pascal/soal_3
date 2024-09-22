@@ -1,0 +1,17 @@
+program menghitung_luas_keliling_lapangan_sepak_bola;
+uses crt;
+
+var
+luas , keliling , panjang, lebar : real;
+
+begin
+    clrscr;
+    write('masukkan panjang lapangan : '); readln(panjang);
+    write('masukkan lebar lapangan   : '); readln(lebar);
+
+    luas := panjang * lebar ;
+    keliling := 2*(panjang + lebar);
+    writeln('luas lapangan:', luas:0:2,  ' meter ');
+    writeln('keliling lapangan:', keliling:0:2, ' meter ');
+
+end.
