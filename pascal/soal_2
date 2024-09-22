@@ -1,0 +1,23 @@
+program menghitung_nilai_akhir_mahasiswa;
+uses crt;
+
+var
+  namamahasiswa : string;
+  nilaikeaktifan, nilaitugas, nilaiujian : integer;
+  nilaimurnikeaktifan, nilaimurnitugas, nilaimurniujian, nilaiakhir : real;
+
+begin
+  clrscr;
+  write('Masukkan nama mahasiswa: '); readln(namamahasiswa);
+  write('Masukkan nilai keaktifan: '); readln(nilaikeaktifan);
+  write('Masukkan nilai tugas: '); readln(nilaitugas);
+  write('Masukkan nilai ujian: '); readln(nilaiujian);
+
+  nilaimurnikeaktifan := nilaikeaktifan * 20 / 100;
+  nilaimurnitugas := nilaitugas * 35 / 100;
+  nilaimurniujian := nilaiujian * 45 / 100;
+
+  nilaiakhir := nilaimurnikeaktifan + nilaimurnitugas + nilaimurniujian;
+  writeln('Nilai akhir: ', nilaiakhir:0:2);
+
+end.
