@@ -1,0 +1,19 @@
+program menghitung_luas_keliling_segitiga;
+uses crt;
+
+var
+luas, keliling, alas, tinggi, miring : real;
+ 
+ begin
+    clrscr;
+    write('masukkan alas      '); readln(alas);
+    write('masukkan tinggi    '); readln(tinggi);
+    write('masukkan miring    '); readln(miring);
+
+    luas := 1/2* alas * tinggi ;
+    keliling := alas + tinggi + miring ;
+    
+    writeln('luas segitiga adalah: ', luas:0:2);
+    writeln('keliling segitiga adalah: ', keliling:0:2);
+
+    end.
