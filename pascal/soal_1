@@ -1,0 +1,23 @@
+program gaji;
+uses crt;
+
+var
+    nama : string;
+    gaji_pokok, gaji_lembur, gaji_total, potongan_gaji : longint;
+    hari_lembur, hari_tidak_bekerja : integer;
+
+ begin
+    clrscr;
+    write   ('Nama Karyawan         :'); readln  (nama);
+    write   ('Gaji Pokok            :'); readln  (gaji_pokok);
+    write   ('Lembur (hari)         :'); readln  (hari_lembur);
+    write   ('Tidak Bekerja (hari)  :'); readln  (hari_tidak_bekerja);
+
+    gaji_lembur :=  150000 * hari_lembur;
+    potongan_gaji :=   30000 * hari_tidak_bekerja;
+    gaji_total :=  gaji_pokok + gaji_lembur - potongan_gaji;
+
+    writeln ('Gaji total : Rp ', gaji_total );
+ 
+
+    end.
