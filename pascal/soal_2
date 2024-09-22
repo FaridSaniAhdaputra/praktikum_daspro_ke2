@@ -8,10 +8,10 @@ var
 
 begin
   clrscr;
-  write('Masukkan nama mahasiswa: '); readln(namamahasiswa);
+  write('Masukkan nama mahasiswa:  '); readln(namamahasiswa);
   write('Masukkan nilai keaktifan: '); readln(nilaikeaktifan);
-  write('Masukkan nilai tugas: '); readln(nilaitugas);
-  write('Masukkan nilai ujian: '); readln(nilaiujian);
+  write('Masukkan nilai tugas:     '); readln(nilaitugas);
+  write('Masukkan nilai ujian:     '); readln(nilaiujian);
 
   nilaimurnikeaktifan := nilaikeaktifan * 20 / 100;
   nilaimurnitugas := nilaitugas * 35 / 100;
